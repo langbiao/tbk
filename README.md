@@ -5,11 +5,12 @@
 [![License](https://poser.pugx.org/ennnnny/tbk/license)](https://packagist.org/packages/ennnnny/tbk)
 
 > 可能是最优雅、简易的淘宝客SDK
+> 基于ennnnny/tbk修改，增加了最新的淘客订单接口
 
 ## 安装
 
 ```shell
-composer require ennnnny/tbk
+composer require langbiao/tbk
 ```
 
 ## 使用
@@ -81,6 +82,7 @@ print_r($res);
 | taobao.tbk.sc.activitylink.toolget( 淘宝联盟官方活动推广API-工具 )     |    \$app->sc->getActivityTool()  |
 | taobao.tbk.dg.punish.order.get( 处罚订单查询 -导购-私域用户管理专用 )     |    \$app->dg->getPunishOrder()  |
 | taobao.tbk.order.get( 淘宝客订单查询 )     |    \$app->order->get()  |
+| taobao.tbk.order.get( 淘宝客-推广者-所有订单查询 )     |    \$app->order->getOrder()  |
 | taobao.tbk.relation.refund( 淘宝客维权退款订单查询-私域用户管理专用 )     |    \$app->order->getRefund()  |
 
 ## 支持
