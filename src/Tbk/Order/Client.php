@@ -32,6 +32,18 @@ class Client extends BaseClient
         $res = $this->httpPost('taobao.tbk.order.get', $params);
         return $res;
     }
+    
+    /**
+     * taobao.tbk.order.details.get (淘宝客-推广者-所有订单查询)
+     * @line https://open.taobao.com/api.htm?docId=43328&docType=2&scopeId=16175
+     * @param array $params
+     * @return array|mixed|\SimpleXMLElement|string
+     */
+    public function getOrder(array $params)
+    {
+        $res = $this->httpPost('taobao.tbk.order.details.get', $params);
+        return $res;
+    }
 
     /**
      * taobao.tbk.relation.refund (淘宝客维权退款订单查询-私域用户管理专用)
