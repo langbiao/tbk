@@ -32,5 +32,17 @@ class Client extends BaseClient
         $res = $this->httpPost('taobao.tbk.coupon.get', $params);
         return $res;
     }
+    
+    /**
+     * taobao.tbk.coupon.convert (淘宝客-推广者-单品券高效转链)
+     * @line https://open.taobao.com/api.htm?docId=29289&docType=2
+     * @param array $params
+     * @return array|mixed|\SimpleXMLElement|string
+     */
+    public function convert(array $params)
+    {
+        $res = $this->httpPost('taobao.tbk.coupon.convert', $params);
+        return $res;
+    }
 
 }
