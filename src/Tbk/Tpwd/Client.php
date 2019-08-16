@@ -32,5 +32,17 @@ class Client extends BaseClient
         $res = $this->httpPost('taobao.tbk.tpwd.create', $params);
         return $res;
     }
+    
+    /**
+     * taobao.wireless.share.tpwd.query (查询解析淘口令)
+     * @line https://open.taobao.com/api.htm?spm=a219a.7386797.0.0.77f5669aqlNRyb&source=search&docId=32461&docType=2
+     * @param array $params
+     * @return array|mixed|\SimpleXMLElement|string
+     */
+    public function parse(array $params)
+    {
+        $res = $this->httpPost('taobao.wireless.share.tpwd.query', $params);
+        return $res;
+    }
 
 }
