@@ -63,6 +63,7 @@ print_r($res);
 | taobao.tbk.coupon.get (阿里妈妈推广券信息查询)   |    \$app->coupon->get()  |
 | taobao.tbk.coupon.convert (淘宝客-推广者-单品券高效转链)   |    \$app->coupon->convert()  |
 | taobao.tbk.tpwd.create (淘宝客淘口令)     |    \$app->tpwd->create()  |
+| taobao.wireless.share.tpwd.query (查询解析淘口令)    |    \$app->tpwd->parse()  |
 | taobao.tbk.content.get (淘客媒体内容输出)[**官网貌似已移除此接口**]    |    \$app->content->get()  |
 | taobao.tbk.dg.newuser.order.get (淘宝客新用户订单API--导购)    |    \$app->dg->getOrderNewUser()  |
 | taobao.tbk.sc.newuser.order.get (淘宝客新用户订单API--社交)     |    \$app->sc->getOrderNewUser()  |
