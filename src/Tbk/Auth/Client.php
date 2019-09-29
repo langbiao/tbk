@@ -27,7 +27,7 @@ class Client extends BaseClient
      * @param array $params
      * @return array|mixed|\SimpleXMLElement|string
      */
-    public function getToken(array $params)
+    public function getAccessToken(array $params)
     {
         $res = $this->httpPost('taobao.top.auth.token.create', $params);
         return $res;
