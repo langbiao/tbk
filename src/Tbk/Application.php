@@ -30,6 +30,7 @@ use ETaobao\Kernel\ServiceContainer;
  * @property \ETaobao\Tbk\Content\Client            $content
  * @property \ETaobao\Tbk\Sc\Client                 $sc
  * @property \ETaobao\Tbk\Order\Client              $order
+ * @property \ETaobao\Tbk\Auth\Client               $auth
  */
 class Application extends ServiceContainer
 {
@@ -49,5 +50,6 @@ class Application extends ServiceContainer
         Content\ServiceProvider::class,
         Sc\ServiceProvider::class,
         Order\ServiceProvider::class,
+        Auth\ServiceProvider::class,
     ];
 }
