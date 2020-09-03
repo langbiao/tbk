@@ -96,6 +96,19 @@ class Client extends BaseClient
     }
 
     /**
+     * 淘礼金发放及使用报表
+     * taobao.tbk.dg.vegas.tlj.instance.report( 淘宝客-推广者-淘礼金发放及使用报表 )
+     * @line https://open.taobao.com/api.htm?spm=a219a.7386797.0.0.4958669auMYx0g&source=search&docId=43317&docType=2
+     * @param array $params
+     * @return array|mixed|\SimpleXMLElement|string
+     */
+    public function tljInstanceReport(array $params)
+    {
+        $res = $this->httpPost('taobao.tbk.dg.vegas.tlj.instance.report', $params);
+        return $res;
+    }
+
+    /**
      * 处罚订单查询 -导购-私域用户管理专用
      * @line https://open.taobao.com/api.htm?docId=42050&docType=2
      * @param array $params
